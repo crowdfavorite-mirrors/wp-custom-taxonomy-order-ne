@@ -2,8 +2,8 @@
 Contributors: mpol
 Tags: ordering, sorting, terms, custom taxonomies, term order, categories, category order
 Requires at least: 3.0
-Tested up to: 4.1
-Stable tag: 2.5.9
+Tested up to: 4.2
+Stable tag: 2.6.3
 License: GPLv2 or later
 
 
@@ -28,6 +28,7 @@ It is a continuation (or fork) of Custom Taxonomy Order, which has been disconti
 
 = Languages =
 
+* de_DE [Patrick Skiebe](http://skiebe.eu)
 * es_ES [Andrew Kurtis](http://webhostinghub.com)
 * fr_FR [Jean-Christophe Brebion](http://jcbrebion.com)
 * it_IT Matteo Boria
@@ -52,8 +53,13 @@ If you update from the original Custom Taxonomy Order please deactivate that fir
 
 = I sorted the terms in the WordPress backend, but I don't see it changed in the frontend =
 
-Did you set the option for that taxonomy to use that custom order? Make sure to check it to have the filters run
+Did you set the option for that taxonomy to use that custom order? Make sure to check it so the filters run
 with your taxonomy.
+
+= My custom taxonomy is not available in the menu page =
+
+This plugin will only offer to sort them when the taxonomy is set to public. Make sure you use 'register_taxonomy'
+with the public parameter set to true (default).
 
 = How do I sort the terms when using a custom query? =
 
@@ -96,6 +102,23 @@ The menu completely left lists the different taxonomies.
 Left are the main taxonomies. Right (or below) are the sub-taxonomies.
 
 == Changelog ==
+
+= 2.6.3 =
+* 2015-03-25
+* Support Link Manager plugin.
+
+= 2.6.2 =
+* 2015-03-21
+* Better suppport for WPMU, also set up new blogs (thanks Andrew Patton).
+
+= 2.6.1 =
+* 2015-03-13
+* Wrap radio buttons inside label, so the label works (thanks Andrew Patton).
+
+= 2.6.0 =
+* 2015-02-28
+* Separate settingspage to own php-file.
+* Add de_DE (thanks Patrick Skiebe).
 
 = 2.5.9 =
 * 2015-01-21
