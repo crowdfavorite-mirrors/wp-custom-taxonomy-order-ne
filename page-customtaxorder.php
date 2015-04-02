@@ -17,8 +17,9 @@ function customtaxorder() {
 	$parent_ID = 0;
 
 	// Remove filter for WPML
-	remove_filter( 'terms_clauses', array( $sitepress, 'terms_clauses' ), 10, 4 );
-	remove_filter( 'get_terms', array( $sitepress, 'get_terms_filter' ) );
+	// CF - do not remove filters. Reorder terms independently for each language
+	//remove_filter( 'terms_clauses', array( $sitepress, 'terms_clauses' ), 10, 4 );
+	//remove_filter( 'get_terms', array( $sitepress, 'get_terms_filter' ) );
 
 	if ( $_GET['page'] == 'customtaxorder' ) {
 		?>
